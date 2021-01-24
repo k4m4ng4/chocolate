@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Payment method</title>
+	<link rel="stylesheet" type="text/css" href="css/payment.css">
+</head>
+<body>
+			<nav>
+			<div class="row clearfix"><!--A clearfix is a way for an element to automatically clear itd childs elements,So that you dont need to add additional markup-->
+				<img src="img/header.png" width="100px" height="100px" class="logo"><br><!--This will be the image for the header-->
+
+				<ul class="main-nav animated slideInDown" ><!--contains the list on the top nav bar-->
+					<li><a href="index.html">HOME</a> </li><!--Will be taking the user back to the home page-->
+					<li><a href="cakedelivery.html">CAKE DELIVERY</a> </li><!--Shows options of whi ch and how the cake should be delivered-->
+					<li><a href="order.html">ORDER</a> </li><!--will show how to order and method of payment-->
+					<li><a href="contact.html">CONTACT</a> </li><!--shows the contact of the company incase of anything-->
+					<li><a href="login.html">LOGIN</a> </li><!--This is where the loogin and sign up page will be-->
+					<li><a href="signup.html">Sign UP</a> </li><!--This is where the loogin and sign up page will be-->
+				</ul>
+			</div>
+		</nav>
+<div class="wrapper">
+	<div class="payment">
+		<h2>PAY USING ANY BANK</h2>
+		<div class="form">
+			<div class="card space">
+				<label class="label">Card holder</label>
+				<input type="text" class="input" name="card_holder" placeholder="Name of card owner">	
+			</div>
+			<div class="card space">
+				<label class="label">Card number</label>
+				<input type="text" class="input" name="card_number" placeholder="Card number">
+			</div>
+			<div class="card-grp space	">
+				<div class="card-item">
+					<label class="label">Expiry date:</label>
+					<input type="text" class="input" name="expiry_date" placeholder="00/00">					
+				</div>
+				<div class="card-item">
+					<label class="label">CVC:</label>
+					<input type="text" class="input" name="cvc" placeholder="000">					
+				</div>			
+			</div>
+			<div class="btn"><a href="fpayment.html">Pay</div>
+		</div>
+	</div>
+</div><br>
+
+
+<div class="wrapper">
+	<div class="payment">
+		<h2>PAY USING MOBILE MONEY</h2>
+		<div class="form">
+			<div class="card space">
+				<label class="label">Name</label>
+				<input type="text" class="input" name="card_holder" placeholder="Name of # owner">	
+			</div>
+			<div class="card space">
+				<label class="label">Phone number</label>
+				<input type="text" class="input" name="card_number" placeholder="+2609++++++++">
+			</div>
+			<div class="card-grp space	">
+				<div class="card-item">
+					<label class="label">Password</label>
+					<input type="password" class="input" name="expiry_date" placeholder="00000">					
+				</div>
+				<!--<div class="card-item">
+					<label class="label">CVC:</label>
+					<input type="text" class="input" name="cvc" placeholder="000">	-->				
+				</div>			
+			</div>
+			<div class="btn">Pay</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>

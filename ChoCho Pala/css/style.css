@@ -1,0 +1,128 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/*This code decorates the whole page */
+}
+body{
+	background-image: url('../img/img123.jpg');
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+/*The body tag is incharge of editing and decorating the body of the website*/
+}
+header{
+	/*background-image: url('../img/Background2.jpg');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:100vh ;
+	/*This code decorates the header and inserts the background picture*/
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+	/*The clear fix generally used in float layouts where elements are floated to be stacked horizontally.*/
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+	/*This code positions the row class*/
+}
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px; 
+	/*This code edites and position the logo class*/
+}
+.main-nav{
+	float: right;
+	margin-top: 30px;
+	/*This code positions the main nav class*/
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 20px;
+	/*This code aligns the options in a straight line on the top right*/
+}
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100px;
+	/*The main-nav helpsin the decorating and arranging of the main naav bar(Home, Cake delivery, Order login)*/
+}
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec;
+}
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+}
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1{
+	color: #fff /*#D2691E*/;
+	font-size: 200%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+.btn-full{
+	background-color: transparent;
+	color: chocolate;
+	margin-right: 15px;
+	border: 1px solid chocolate;
+}
+.btn-full:hover{
+	background-color: #fff;
+}
+.colorchange{
+	animation: colorchangeWELCOMETOCHOCOLATEPALACEHOMEOFTHEBESTCHOCOLATECAKES 1s infinite;
+}
+@keyframes colorchangeWELCOMETOCHOCOLATEPALACEHOMEOFTHEBESTCHOCOLATECAKES{
+	0%{color: red;}
+	25%{color: #bf55ec;}
+	50%{color: white;}
+	75%{color: brown;}
+	100%{color: #bf55ec;}
+}
+/*///////////These are some of the responsive queries/////////////*/
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+}
+@media only screen and (max-width: 1180px){
+	h1{font-size: 180%;}
+	.main-nav{display: none;}
+}

@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*This code decorates the wholw page */
+}
+body{
+    background-image: url('../img/img123.jpg');
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+
+}
+header{
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100vh ;
+    /*This code decorates the header and inserts the background picture*/
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+    /*The clear fix generally used in float layouts where elements are floated to be stacked horizontally.*/
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+    /*This code positions the row class*/
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px; 
+    /*This code edites and position the logo class*/
+}
+.main-nav{
+    float: right;
+    margin-top: 30px;
+    /*This code positions the main nav class*/
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    /*This code aligns the options in a straight line on the top right*/
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    /*border: 1px solid red;*/
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main{
+    margin: auto;
+}
+.title{
+    margin-left: 80px;
+    margin-top: 20px;
+    float: left;
+    position: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: skyblue;
+    font-size: 25px;
+}
+.contact-title h1{
+    font-size: 32px;
+    line-height: 10px;
+}
+.contact-title h2{
+    font-size: 16px;
+}
+.contact-title{
+    margin-top: 100px;
+    color: skyblue;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
